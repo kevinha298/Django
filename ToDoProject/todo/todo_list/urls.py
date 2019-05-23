@@ -1,0 +1,9 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.home, name="home"),
+    path('delete/<list_id>', views.delete, name="delete"),
+    path('cross_off/<list_id>', views.delete, name="delete"),
+    path('uncross/<list_id>', views.delete, name="delete"),
+]
